@@ -8,7 +8,8 @@
     quick-tap-ms = <150>;
 };
 
-behaviors {
+/ {
+    behaviors {
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMI";
@@ -28,29 +29,28 @@ behaviors {
         };
     };
 
-combos {
-    compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
 
-    lclk {
-        bindings = <&mkp LCLK>;
-        key-positions = <16 17>;
-        layers = <QWERT>;
+        lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <16 17>;
+            layers = <QWERT>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <17 18>;
+            layers = <QWERT>;
+        };
+
+        mclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <18 19>;
+            layers = <QWERT>;
+       };
     };
 
-    rclk {
-        bindings = <&mkp RCLK>;
-        key-positions = <17 18>;
-        layers = <QWERT>;
-    };
-
-    mclk {
-        bindings = <&mkp MCLK>;
-        key-positions = <18 19>;
-        layers = <QWERT>;
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
