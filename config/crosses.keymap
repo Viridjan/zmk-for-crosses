@@ -8,6 +8,7 @@
     quick-tap-ms = <150>;
 };
 
+/ {
 behaviors {
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -48,6 +49,7 @@ combos {
         key-positions = <18 19>;
         layers = <QWERT>;
     };
+};
 };
 
 / {
