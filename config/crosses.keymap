@@ -10,6 +10,48 @@
 
 / {
 
+    behaviors {
+        kp_cs: SYM_comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_pc: SYM_period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COL";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        mclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <1 2>;
+            layers = <0>;
+       };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
