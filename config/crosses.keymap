@@ -8,6 +8,26 @@
     quick-tap-ms = <150>;
 };
 
+behaviors {
+        kp_cs: SYM_comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_pc: SYM_period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COL";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
 combos {
     compatible = "zmk,combos";
 
@@ -64,7 +84,7 @@ combos {
             bindings = <
 &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &trans
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
               &none  &none  &none    &none  &none  &none
             >;
         };
