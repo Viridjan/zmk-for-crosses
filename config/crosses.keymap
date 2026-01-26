@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -10,26 +9,26 @@
 };
 
 combos {
-        compatible = "zmk,combos";
+    compatible = "zmk,combos";
 
-        lclk {
-            bindings = <&mkp LCLK>;
-            key-positions = <19 20>;
-            layers = <QWERT>;
-        };
-
-        rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
-            layers = <QWERT>;
-        };
-
-        mclk {
-            bindings = <&mkp MCLK>;
-            key-positions = <21 22>;
-            layers = <QWERT>;
-        };
+    lclk {
+        bindings = <&mkp LCLK>;
+        key-positions = <16 17>;
+        layers = <QWERT>;
     };
+
+    rclk {
+        bindings = <&mkp RCLK>;
+        key-positions = <17 18>;
+        layers = <QWERT>;
+    };
+
+    mclk {
+        bindings = <&mkp MCLK>;
+        key-positions = <18 19>;
+        layers = <QWERT>;
+    };
+};
 
 / {
     keymap {
@@ -46,28 +45,27 @@ combos {
 
         num-fn {
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4   &kp F5     &none  &kp N7         &kp N8         &kp N9  &kp MINUS
-&kp F6  &kp F7  &kp F8     &kp F9   &kp F10    &none            &kp N4         &kp N5         &kp N6  &kp N0
-&none   &none   &none      &kp F11  &kp F12    &none              &kp N1         &kp N2         &kp N3  &kp EQUAL
-                &trans  &trans   &trans     &trans          &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &none   &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &none   &kp N4  &kp N5  &kp N6  &kp N0
+&none   &none   &none   &kp F11  &kp F12    &none   &kp N1  &kp N2  &kp N3  &kp EQUAL
+                &trans  &trans   &trans     &trans  &trans  &trans
             >;
         };
 
         other {
             bindings = <
-&none  &none &none &none &none    &none       &kp HOME    &kp PG_DN      &kp PG_UP     &kp END
-&none       &none       &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
-&none       &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT
-                        &trans      &trans  &trans               &trans      &trans      &kp RIGHT_ALT
+&none         &none       &none     &none     &none     &none      &kp HOME  &kp PG_DN      &kp PG_UP   &kp END
+&none         &none       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none     &kp C_PLAY     &kp C_PREV  &kp C_VOL_DN
+&kp C_VOL_UP  &kp C_NEXT  &trans    &trans    &trans    &trans     &trans    &kp RIGHT_ALT
             >;
         };
 
         mouse-misc {
             bindings = <
-&none  &none  &none  &none      &none    &none  &none      &none  &none  &none
-&none         &none         &none         &none      &none         &none       &none      &none         &none         &none
-&none        &none         &none         &none      &none         &none       &none      &none         &none         &trans
-                            &none     &none  &none     &none   &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &trans
+              &none  &none  &none    &none  &none  &none
             >;
         };
 
