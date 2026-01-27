@@ -22,39 +22,3 @@ ZMK_MOD_MORPH(SYM_bracket_angB_R,
     bindings = <&kp RPAR>, <&kp GT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-
-        kp_eq: SYM_excl_ques {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SYM_EQ";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp QUESTION>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        kp_slsh: SYM_fslsh_bslsh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SYM_SLSH";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        kp_bL: SYM_bracket_angB_L {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SYM_BSABl";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LT>;
-
-            mods = <(MOD_LSFT)>;
-        };
-
-        kp_bR: SYM_bracket_angB_R {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SYM_BSABr";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp GT>;
-
-            mods = <(MOD_LSFT)>;
-        };
