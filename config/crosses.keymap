@@ -14,7 +14,60 @@ ui#include <behaviors.dtsi>
 
 / {
     behaviors {
-        #include "composite_keys.dtsi"
+        
+        kp_cs: SYM_comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_pc: SYM_period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COL";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_eq: SYM_excl_ques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYM_EQ";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp QUESTION>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_slsh: SYM_fslsh_bslsh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYM_SLSH";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        kp_bL: SYM_bracket_angB_L {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYM_BSABl";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LT>;
+
+            mods = <(MOD_LSFT)>;
+        };
+
+        kp_bR: SYM_bracket_angB_R {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYM_BSABr";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp GT>;
+
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
