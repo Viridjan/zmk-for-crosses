@@ -41,14 +41,14 @@
             hold-trigger-on-release;
         };
 
-        td0: tap_dance_game {
+        td0: tap_dance_ {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = < >, <&to 3>, < >;
         };
 
-        td1: tap_dance_std {
+        td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -75,7 +75,7 @@
     };
 
     combos {
-        compatible = "zmk,combos";
+        compatible = "zmk,combos,keymap";
 
         lclk {
             bindings = <&mkp LCLK>;
