@@ -41,6 +41,20 @@
             hold-trigger-on-release;
         };
 
+        td0: tap_dance_game {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = < >, <&to 3>, < >;
+        };
+
+        td1: tap_dance_std {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = < >, <&to 0>, < >;
+        };
+
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMI";
