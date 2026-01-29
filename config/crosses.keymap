@@ -165,7 +165,7 @@
         raise {
             bindings = <
 &kp PSCRN  &none  &kp LBKT  &kp RBKT  &none                     &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
-&none     &hml LALT &kp_bL    &hml LGUI &kp_bR    &none                     &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&none      &none  &kp_bL    &kp_bR    &none                     &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
 &kp ESC    &none  &kp_slsh  &kp_eq    &none                     &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
                             &trans    &trans  &trans    &trans  &none       &trans
             >;
