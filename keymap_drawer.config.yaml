@@ -156,7 +156,7 @@ parse_config:
       tap: 'L'
       hold: $$mdi:apple-keyboard-option$$
     "&hmr LGUI SQT":
-      tap: 'A'
+      tap: ''
       hold: $$mdi:apple-keyboard-command$$
     "&hml LGUI F6":
       tap: 'F6'
@@ -172,15 +172,19 @@ parse_config:
       hold: $$mdi:apple-keyboard-shift$$
     "&hmr LSHIFT N4":
       tap: '4'
+      shifted: '$'
       hold: $$mdi:apple-keyboard-shift$$
     "&hmr LCTRL N5":
       tap: '5'
+      shifted: '%'
       hold: $$mdi:apple-keyboard-control$$
     "&hmr LALT N6":
       tap: '6'
+      shifted: '^'
       hold: $$mdi:apple-keyboard-option$$
     "&hmr LGUI N0":
       tap: '9'
+      shifted: '('
       hold: $$mdi:apple-keyboard-command$$
     # self behaviors
     "&hm LG(LS(V)) P":
