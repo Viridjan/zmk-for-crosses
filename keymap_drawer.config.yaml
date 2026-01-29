@@ -134,27 +134,30 @@ parse_config:
       tap: $$mdi:backspace-reverse-outline$$
       hold: $$mdi:navigation-variant$$
     # Home rows
-    "&hm LEFT_GUI A":
+    "&hml LGUI A":
       tap: 'A'
       shifted: $$mdi:apple-keyboard-command$$
-    "&hm LEFT_ALT S":
+    "&hml LALT S":
       tap: 'S'
       shifted: $$mdi:apple-keyboard-option$$
-    "&hm LEFT_CONTROL D":
+    "&hml LCTRL D":
       tap: 'D'
       shifted: $$mdi:apple-keyboard-control$$
-    "&hm LEFT_SHIFT F":
+    "&hml LSHIFT F":
       tap: 'F'
       shifted: $$mdi:apple-keyboard-shift$$
-    "&hm RIGHT_SHIFT J":
+    "&hmr LSHIFT J":
       tap: 'J'
       shifted: $$mdi:apple-keyboard-shift$$
-    "&hm RIGHT_CONTROL K":
+    "&hmr LCTRL K":
       tap: 'K'
       shifted: $$mdi:apple-keyboard-control$$
-    "&hm RIGHT_ALT L":
+    "&hmr LALT L":
       tap: 'L'
       shifted: $$mdi:apple-keyboard-option$$
+    "&hmr LGUI SQT":
+      tap: 'A'
+      shifted: $$mdi:apple-keyboard-command$$
     # self behaviors
     "&hm LG(LS(V)) P":
       tap: 'P'
