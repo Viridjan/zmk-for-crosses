@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: LGUI}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, s: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, s: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, s: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: LGUI}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, s: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, s: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, s: '$$mdi:apple-keyboard-command$$'}
   - {t: '`', s: '~'}
   - Z
   - X
@@ -48,16 +48,16 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F6, h: LGUI}
   - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F8, h: LGUI}
+  - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F9, h: '$$mdi:apple-keyboard-shift$$'}
   - F10
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: $}
-  - {t: '5', h: LGUI, s: '%'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-option$$', s: ^}
-  - {t: '0', h: '$$mdi:apple-keyboard-control$$', s: )}
+  - {t: '0', h: LGUI, s: )}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
