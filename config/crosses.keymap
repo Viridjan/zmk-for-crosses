@@ -130,20 +130,20 @@
 
         lclk {
             bindings = <&mkp LCLK>;
-            key-positions = < RT1 RT2 >;
-            layers = < BASE >;
+            key-positions = < 6 7 >;
+            layers = < 0 >;
         };
 
         rclk {
             bindings = <&mkp RCLK>;
-            key-positions = < RT2 RT3 >;
-            layers = < BASE >;
+            key-positions = < 7 8 >;
+            layers = < 0 >;
         };
 
         mclk {
             bindings = <&mkp MCLK>;
-            key-positions = < RT3 RT4 >;
-            layers = < BASE >;
+            key-positions = < 8 9 >;
+            layers = < 0 >;
         };
     };
 
