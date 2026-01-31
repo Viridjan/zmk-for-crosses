@@ -56,18 +56,11 @@
             hold-trigger-on-release;
         };
 
-        td_0: tap_dance_0 {
+        td_game: tap_dance_game {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&none>, <&to GAME>, <&none>;
-        };
-
-        td_1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&none>, <&to BASE>, <&none>;
         };
 
         kp_cs: SYM_comma_semi {
@@ -84,42 +77,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
-
-            mods = < ( MOD_LSFT | MOD_RSFT ) >;
-        };
-
-        kp_eq: SYM_excl_ques {
-            label = "SYM_EQ";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp QUESTION>;
-
-            mods = < ( MOD_LSFT | MOD_RSFT ) >;
-        };
-
-        kp_slsh: SYM_fslsh_bslsh {
-            label = "SYM_SLSH";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-
-            mods = < ( MOD_LSFT | MOD_RSFT ) >;
-        };
-
-        kp_bL: SYM_bracket_angB_L {
-            label = "SYM_BSABl";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LT>;
-
-            mods = < ( MOD_LSFT | MOD_RSFT ) >;
-        };
-
-        kp_bR: SYM_bracket_angB_R {
-            label = "SYM_BSABr";
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp GT>;
 
             mods = < ( MOD_LSFT | MOD_RSFT ) >;
         };
@@ -152,28 +109,28 @@
 
         base {
             bindings = <
-&kp Q         &kp W        &kp E        &kp R          &kp T                        &kp Y            &kp U          &kp I        &kp O        &kp P
+&kp Q        &kp W        &kp E         &kp R          &kp T                        &kp Y            &kp U          &kp I         &kp O        &kp P
 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G                        &kp H            &hmr LSHIFT J  &hmr LCTRL K  &hmr LALT L  &hmr LGUI SQT
-&kp GRAVE     &kp Z        &kp X        &kp C          &kp V                        &kp B            &kp N          &kp M        &kp_cs       &kp_pc
-                                        &kp TAB        &mo LOWER  &none    &kp RET  &lt RAISE SPACE  &td_0
+&kp GRAVE    &kp Z        &kp X         &kp C          &kp V                        &kp B            &kp N          &kp M         &kp_cs       &kp_pc
+                                        &kp TAB        &mo LOWER  &none    &kp RET  &lt RAISE SPACE  &td_game
             >;
         };
 
         lower {
             bindings = <
-&kp F1         &kp F2        &kp F3        &kp F4          &kp F5                     &none    &kp N7          &kp N8        &kp N9        &kp MINUS
-&hml LGUI F6  &hml LALT F7  &hml LCTRL F8  &hml LSHIFT F9  &kp F10                    &none    &hmr LSHIFT N4  &hmr LCTRL N5  &hmr LALT N6  &hmr LGUI N0
-&kp ESC        &none         &none         &kp F11         &kp F12                    &none    &kp N1          &kp N2        &kp N3        &kp EQUAL
-                                           &trans          &none    &trans    &trans  &kp RET  &trans
+&kp F1        &kp F2        &kp F3         &kp F4          &kp F5                     &kp EXCL      &kp N7          &kp N8         &kp N9        &kp MINUS
+&hml LGUI F6  &hml LALT F7  &hml LCTRL F8  &hml LSHIFT F9  &kp F10                    &kp QUESTION  &hmr LSHIFT N4  &hmr LCTRL N5  &hmr LALT N6  &hmr LGUI N0
+&kp ESC       &none         &none          &kp F11         &kp F12                    &none         &kp N1          &kp N2         &kp N3        &kp EQUAL
+                                           &trans          &none    &trans    &trans  &kp RET       &trans
             >;
         };
 
         raise {
             bindings = <
-&kp PSCRN  &kp LBKT  &kp RBKT  &none   &none                     &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
-&kp_slsh   &kp_bL  &kp_bR    &kp_eq    &none                     &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
-&kp ESC    &none   &none     &none     &none                     &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-                             &trans    &trans  &trans    &trans  &none       &trans
+&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC                    &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
+&none      &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT                    &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&kp ESC    &none     &kp FSLH  &kp BSLH  &kp PIPE                    &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
+                               &trans    &trans    &trans    &trans  &none       &trans
             >;
         };
 
@@ -182,16 +139,16 @@
 &kp Q      &kp W  &kp E  &kp R    &kp T                            &kp Y   &kp U  &kp I  &kp O      &kp P
 &kp A      &kp S  &kp D  &kp F    &kp G                            &kp H   &kp J  &kp K  &kp L      &kp APOS
 &kp LCTRL  &kp Z  &kp X  &kp C    &kp V                            &kp B   &kp N  &kp M  &kp COMMA  &kp DOT
-                         &kp TAB  &mo LOW_G  &kp SPACE    &kp RET  &trans  &td_1
+                         &kp TAB  &mo LOW_G  &kp SPACE    &kp RET  &trans  &to 0
             >;
         };
 
         lower_game {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4   &kp F5                     &none   &kp N7  &kp N8  &kp N9  &kp MINUS
-&kp F6   &kp F7  &kp F8  &kp F9   &kp F10                    &none   &kp N4  &kp N5  &kp N6  &kp N0
-&kp ESC  &kp LALT   &none   &kp F11  &kp F12                    &none   &kp N1  &kp N2  &kp N3  &kp EQUAL
-                         &trans   &trans   &trans    &trans  &trans  &trans
+&kp F1   &kp F2    &kp F3  &kp F4   &kp F5                     &none   &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6   &kp F7    &kp F8  &kp F9   &kp F10                    &none   &kp N4  &kp N5  &kp N6  &kp N0
+&kp ESC  &kp LALT  &none   &kp F11  &kp F12                    &none   &kp N1  &kp N2  &kp N3  &kp EQUAL
+                           &trans   &trans   &trans    &trans  &trans  &trans
             >;
         };
     };
