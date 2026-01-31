@@ -39,7 +39,7 @@ HML_C(F6)  HML_A(F7)  HML_G(F8)  HML_S(F9)  &kp F10              &kp QMARK  HMR_
 &kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC              &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DEL
 XXX        &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT              XXX         &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
 &kp ESC    XXX       &kp FSLH  &kp BSLH  &kp PIPE              &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-                               ___       ___       ___    ___  ___         XXX         ___
+                               ___       ___       ___    ___  XXX         ___
             >;
         };
 
