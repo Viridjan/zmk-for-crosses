@@ -40,6 +40,8 @@ ZMK_MOD_MORPH(kp_pc, bindings = <&kp DOT>, <&kp COLON>;
 
 #define AS(keycode) &as LS(keycode) keycode
 
+ZMK_TAP_DANCE(td_game,  bindings = <&none>,<&to BASE_G>;  tapping-term-ms = <200>;)
+
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
