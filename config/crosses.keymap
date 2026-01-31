@@ -31,7 +31,7 @@
 #define THUMBS    LH2 LH1 LH0    RH2 RH1 RH0
 
 /* Left-hand HRMs. */
-ZMK_HOLD_TAP(hml,
+ZMK_HOLD_TAP(hmll,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
@@ -42,7 +42,7 @@ ZMK_HOLD_TAP(hml,
 )
 
 /* Right-hand HRMs. */
-ZMK_HOLD_TAP(hmr,
+ZMK_HOLD_TAP(hmrr,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
