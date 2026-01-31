@@ -36,14 +36,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: raise}
-  - '&td_0'
+  - '&td_game'
   lower:
   - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '!'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -53,7 +53,7 @@ layers:
   - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F9, h: '$$mdi:apple-keyboard-shift$$'}
   - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '?'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: $}
   - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-option$$', s: ^}
@@ -76,20 +76,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   raise:
   - $$mdi:printer-outline$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - <
+  - '>'
+  - '}'
   - {t: '$$mdi:backspace$$', type: backspace}
   - HOME
   - PG DN
   - PG UP
   - $$mdi:backspace-reverse-outline$$
-  - {t: /, s: \}
-  - {t: (, s: <}
-  - {t: ), s: '>'}
-  - {t: '!', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - (
+  - )
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -97,9 +97,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
+  - {t: \, s: '|'}
+  - '|'
   - PLAY
   - $$mdi:skip-previous$$
   - $$mdi:volume-low$$
@@ -147,7 +147,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_1'
+  - {t: base, h: toggle}
   lower_game:
   - F1
   - F2
@@ -170,7 +170,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '0', s: )}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
   - F12
