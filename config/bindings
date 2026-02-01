@@ -1,0 +1,21 @@
+// Tap: "," | Lshft + tap: ";" 
+ZMK_MOD_MORPH(kp_cs, bindings = <&kp COMMA>, <&kp SEMI>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;)
+
+// Tap: "." | Lshft + tap: ":"
+ZMK_MOD_MORPH(kp_pc, bindings = <&kp DOT>, <&kp COLON>;
+              mods = <(MOD_LSFT|MOD_RSFT)>;)
+
+// Tap: nothing | Double tap: gaming layer
+ZMK_TAP_DANCE(td_game,  bindings = <&none>,<&to BASE_G>;  tapping-term-ms = <200>;)
+
+// Tap: sticky shift | Double tap: caps word | Hold: shift
+ZMK_TAP_DANCE(td_shift, bindings = <&sk LSHIFT>,<&caps_word>;  tapping-term-ms = <200>;)
+
+ZMK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(mclk,    &mkp MCLK,    RT3 RT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+
+ZMK_COMBO(esc,     &kp ESC,      LT4 LT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(del,     &kp BSPC,     LT3 LT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(canc,    &kp DEL,      LT2 LT1,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
