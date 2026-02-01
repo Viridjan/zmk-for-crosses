@@ -6,6 +6,7 @@
 #include "zmk-helpers/key-labels/36.h"
 
 #include "setup.dtsi"
+#include "bindings.dtsi"
 
 &lt {
     tapping-term-ms = <200>;
