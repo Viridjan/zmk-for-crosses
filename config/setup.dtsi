@@ -1,8 +1,8 @@
-\\ none and trans alias
+// none and trans alias
 #define XXX &none
 #define ___ &trans
 
-\\ layers alias
+// layers alias
 #define BASE   0
 #define LOWER  1
 #define RAISE  2
@@ -22,7 +22,7 @@
 #define THUMBS    LH2 LH1 LH0    RH2 RH1 RH0
 
 
-\\ homerow modifier definition
+// homerow modifier definition
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
   ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
                tapping-term-ms = <280>; quick-tap-ms = <175>;                  \
