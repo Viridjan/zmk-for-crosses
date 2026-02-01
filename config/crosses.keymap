@@ -31,7 +31,7 @@ HML_C(A)   HML_A(S)  HML_G(D)  HML_S(F)  &kp G                            &kp H 
             bindings = <
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5               &kp EXCL   &kp N7     &kp N8     &kp N9     &kp MINUS
 HML_C(F6)  HML_A(F7)  HML_G(F8)  HML_S(F9)  &kp F10              &kp QMARK  HMR_S(N4)  HMR_G(N5)  HMR_A(N6)  HMR_C(N0)
-XXX        XXX        XXX        &kp F11    &kp F12              XXX        &kp N1     &kp N2     &kp N3     &kp EQUAL
+&kp PSCRN  XXX        XXX        &kp F11    &kp F12              XXX        &kp N1     &kp N2     &kp N3     &kp EQUAL
                                  ___        XXX      ___    ___  &kp RET    ___
             >;
         };
