@@ -38,17 +38,17 @@ HML_C(F6)  HML_A(F7)  HML_G(F8)  HML_S(F9)  &kp F10              &kp QMARK  HMR_
 
         raise {
             bindings = <
-&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC              &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DEL
-XXX        &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT              XXX         &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
-&kp ESC    XXX       &kp FSLH  &kp BSLH  &kp PIPE              &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-                               ___       ___       ___    ___  XXX         ___
+&kp LBRC     &kp LT       &kp GT       &kp RBRC     XXX                   &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DEL
+HML_C(LBKT)  HML_A(LPAR)  HML_G(RPAR)  HML_S(RBKT)  XXX                   XXX         &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&kp PSCRN    XXX          &kp FSLH     &kp BSLH     &kp PIPE              &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
+                                       ___          ___       ___    ___  XXX         ___
             >;
         };
 
         game {
             bindings = <
 &kp Q      &kp W  &kp E  &kp R    &kp T                            &kp Y   &kp U  &kp I  &kp O      &kp P
-&kp A      &kp S  &kp D  &kp F    &kp G                            &kp H   &kp J  &kp K  &kp L      &kp APOS
+&kp A      &kp S  &kp D  &kp F    &kp G                            &kp H   &kp J  &kp K  &kp L      &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C    &kp V                            &kp B   &kp N  &kp M  &kp COMMA  &kp DOT
                          &kp TAB  &mo LOW_G  &kp SPACE    &kp RET  ___     &to 0
             >;
