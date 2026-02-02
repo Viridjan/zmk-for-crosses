@@ -134,58 +134,74 @@ parse_config:
       tap: $$mdi:backspace-reverse-outline$$
       hold: $$mdi:navigation-variant$$
     # Home rows
-    "&hml LGUI A":
+    "HML_C(A)":
       tap: 'A'
       hold: $$mdi:apple-keyboard-command$$
-    "&hml LALT S":
+    "HML_A(S)":
       tap: 'S'
       hold: $$mdi:apple-keyboard-option$$
-    "&hml LCTRL D":
+    "HML_G(D)":
       tap: 'D'
       hold: $$mdi:apple-keyboard-control$$
-    "&hml LSHIFT F":
+    "HML_S(F)":
       tap: 'F'
       hold: $$mdi:apple-keyboard-shift$$
-    "&hmr LSHIFT J":
+    "HMR_S(J)":
       tap: 'J'
       hold: $$mdi:apple-keyboard-shift$$
-    "&hmr LCTRL K":
+    "HMR_G(K)":
       tap: 'K'
       hold: $$mdi:apple-keyboard-control$$
-    "&hmr LALT L":
+    "HMR_A(L)":
       tap: 'L'
       hold: $$mdi:apple-keyboard-option$$
-    "&hmr LGUI SQT":
+    "HMR_C(SQT)":
       tap: ''
       hold: $$mdi:apple-keyboard-command$$
-    "&hml LGUI F6":
+    "HML_C(F6)":
       tap: 'F6'
       hold: $$mdi:apple-keyboard-command$$
-    "&hml LALT F7":
+    "HML_A(F7)":
       tap: 'F7'
       hold: $$mdi:apple-keyboard-option$$
-    "&hml LCTRL F8":
+    "HML_G(F8)":
       tap: 'F8'
       hold: $$mdi:apple-keyboard-control$$
-    "&hml LSHIFT F9":
+    "HML_S(F9)":
       tap: 'F9'
       hold: $$mdi:apple-keyboard-shift$$
-    "&hmr LSHIFT N4":
+    "HMR_S(N4)":
       tap: '4'
       shifted: '$'
       hold: $$mdi:apple-keyboard-shift$$
-    "&hmr LCTRL N5":
+    "HMR_G(N5)":
       tap: '5'
       shifted: '%'
       hold: $$mdi:apple-keyboard-control$$
-    "&hmr LALT N6":
+    "HMR_A(N6)":
       tap: '6'
       shifted: '^'
       hold: $$mdi:apple-keyboard-option$$
-    "&hmr LGUI N0":
-      tap: '9'
-      shifted: '('
+    "HMR_C(N0)":
+      tap: '0'
+      shifted: ')'
       hold: $$mdi:apple-keyboard-command$$
+    "HML_C(LBKT)":
+      tap: '['
+      hold: $$mdi:apple-keyboard-command$$
+    "HML_A(LPAR)":
+      tap: '('
+      hold: $$mdi:apple-keyboard-option$$
+    "HML_G(RPAR)":
+      tap: ')'
+      hold: $$mdi:apple-keyboard-control$$
+    "HML_S(RBKT)":
+      tap: ']'
+      hold: $$mdi:apple-keyboard-shift$$
+    # smart shift
+    "&td_shift":
+      tap: $$mdi:apple-keyboard-shift$$
+      shifted: $$mdi:apple-keyboard-shift$$ $$mdi:apple-keyboard-shift$$
     # self behaviors
     "&hm LG(LS(V)) P":
       tap: 'P'
