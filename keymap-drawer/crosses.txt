@@ -19,7 +19,7 @@ layers:
     - [{t: $$mdi:apple-keyboard-control$$, left: $$mdi:keyboard-esc$$}, {t: $$mdi:apple-keyboard-shift$$, left: $$mdi:apple-keyboard-option$$}, {t: X}, {t: C, left: F11}, {t: V, left: F12}]
     - [{t: B}, {t: N, left: 1}, {t: M, left: 2}, {t: C, left: 3}, {t: B}]
     - [$$mdi:keyboard-tab$$, {h: LOWER}, $$mdi:keyboard-space$$]
-    - [t: $$mdi:keyboard-return$$, null, {s: GAME}]
+    - [t: $$mdi:keyboard-return$$, null, {t: BASE}]
 combos:
   - {p: [0, 1], k: $$mdi:keyboard-esc$$, l: ["BASE"], a: top}
   - {p: [1, 2], k: $$mdi:backspace-outline$$, l: ["BASE"], a: top}
