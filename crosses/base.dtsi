@@ -39,7 +39,7 @@ HML_C(F6)  HML_A(F7)  HML_G(F8)  HML_S(F9)  &kp F10              &kp QMARK  &kp 
         raise {
             bindings = <
 &kp LBRC     &kp LT       &kp GT       &kp RBRC     XXX                   XXX       XXX         XXX           XXX           XXX
-HML_C(LBKT)  HML_A(LPAR)  HML_G(RPAR)  HML_S(RBKT)  XXX                   XXX       &kp LEFT    &td_dn        &td_up        &kp RIGHT
+HML_C(LBKT)  HML_A(LPAR)  HML_G(RPAR)  HML_S(RBKT)  XXX                   XXX       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
 &kp PSCRN    &kp BSLH     &kp FSLH     &kp PIPE     XXX                   &kp C_PP  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
                                        ___          ___       ___    ___  XXX       ___
             >;
