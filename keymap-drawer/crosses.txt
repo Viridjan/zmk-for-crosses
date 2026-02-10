@@ -11,7 +11,7 @@ layers:
     - [{t: "`", left: $$mdi:printer-outline$$}, {t: Z}, {t: X, right: "/"}, {t: C, left: F11, right: \}, {t: V, left: F12, right: "|"}]
     - [{t: B, right: $$mdi:play-pause$$}, {t: N, left: 1, right: $$mdi:skip-previous$$}, {t: M, left: 2, right: $$mdi:volume-low$$a}, {t: C, left: 3, right: $$mdi:volume-high$$}, {t: B, left: "=", right: $$mdi:skip-next$$}]
     - [$$mdi:keyboard-tab$$, {h: LOWER}, $$mdi:apple-keyboard-caps$$]
-    - [t: $$mdi:keyboard-return$$, {t: $$mdi:keyboard-space$$, h: RAISE}, {t: LOWER, s: GAME}]
+    - [t: $$mdi:keyboard-return$$, {t: $$mdi:keyboard-space$$, h: RAISE}, {h: LOWER, s: GAME}]
   GAME:
     - [{t: Q, left: F1}, {t: W, left: F2}, {t: E, left: F3}, {t: O, left: F4}, {t: P, left: F5}]
     - [{t: Y, left: $$mdi:backspace-outline$$}, {t: U, left: 7}, {t: J, left: 8}, {t: R, left: 9}, {t: T}]
